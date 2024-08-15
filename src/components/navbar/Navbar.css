@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.uppercase{
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+}
+.uppercase:hover{
+    text-decoration: underline 2px red;
+    color: black !important;
+    transition: color 0.3s ease-in;
+}
+.github{
+    font-size: clamp(0.625rem, 0.5469rem + 0.25vw, 0.6875rem);
+}
+
+.github-link {
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+.github-link:hover{
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .navbar-collaps{
+      margin-right: auto;
+    }
+    
+}
+.logo-mobile{
+      display: none;  
+}
+@media (max-width: 1220px) {
+    .logo-mobile{
+        display: flex;
+    }
+    .logo-desktop{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .toggle{
+        display: flex;
+    }
+    
+  }
+
+  
+  
