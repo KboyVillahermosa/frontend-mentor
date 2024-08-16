@@ -9,8 +9,8 @@ export function Component() {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand href="" className="">
-        <img src="/public/image/logo-desktop.svg" className="logo-desktop mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <img src="/public/image/logo-mobile.svg" className="logo-mobile" alt="" />
+        <img src="/logo-desktop.svg" className="logo-desktop mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <img src="/logo-mobile.svg" className="logo-mobile" alt="" />
       </Navbar.Brand>
         <Navbar.Toggle className="toggle" />
       <Navbar.Collapse className="navbar-collaps">

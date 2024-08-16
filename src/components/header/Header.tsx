@@ -15,7 +15,7 @@ const Header:React.FC = () => {
                  </div>
         </div>
         <div className="header-img">
-            <img src="/public/image/home-hero (1).webp" alt="" />
+            <img src="/home-hero (1).webp" alt="" />
         </div>
     </div>
     </>
