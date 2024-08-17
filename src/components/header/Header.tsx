@@ -13,6 +13,14 @@ const Header:React.FC = () => {
                  <div className='log-div'>
                  <button className='login-github uppercase flex'><p className='mr-2'>login with github</p> <FaGithub className='github-icon text-xl' /></button>
                  </div>
+                 <div className="join">
+                  <div className="join-image">
+                    <img src="/avatars.webp" alt="" />
+                  </div>
+                 <div className="join-content">
+                  <p>Join 875,571 developers building projects, reviewing code, and helping each other improve.</p>
+                 </div>
+                 </div>
         </div>
         <div className="header-img">
             <img src="/home-hero (1).webp" alt="" />
