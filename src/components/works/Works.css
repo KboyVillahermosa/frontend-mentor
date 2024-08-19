@@ -1,28 +1,44 @@
+.how-it-works-header{
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
 .how-it-works {
     display: grid;
     grid-template-columns: 5fr 3fr; /* Adjust column ratios */
     gap: 20px; 
     padding: 20px; 
     flex-wrap: wrap;
+    background: #ECF4F4;
   }
-  
+  @media screen and (max-width: 1200px){
+    .how-it-works{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+  }
   .cards {
     display: flex;
     flex-direction: column;
     gap: 20px; 
     align-items: center; 
     margin-top: 180px;
+    
   }
   
   .card {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 16px;
+    background: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
     max-width: 800px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .card.active {
@@ -31,14 +47,14 @@
   }
   .card h3 {
     margin: 0;
-    text-align: center; 
+    text-align: start; 
   }
   
   .card p {
     margin-top: 8px;
     font-size: 14px;
     color: white;
-    text-align: center; /* Center card description */
+    text-align: start; /* Center card description */
   }
 
   .tab-content {
@@ -48,7 +64,7 @@
   }
   
   .image {
-    max-width: 100%; 
+    width: 100%; 
     max-width: 600px;
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px; /* Optional: add border radius to image */

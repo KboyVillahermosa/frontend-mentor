@@ -18,7 +18,7 @@ const Header:React.FC = () => {
                     <img src="/avatars.webp" alt="" />
                   </div>
                  <div className="join-content">
-                  <p>Join 875,571 developers building projects, reviewing code, and helping each other improve.</p>
+                  <p>Join <span className='join-content-count text-blue-900 font-bold'>875,571</span> developers building projects, reviewing code, and helping each other improve.</p>
                  </div>
                  </div>
         </div>

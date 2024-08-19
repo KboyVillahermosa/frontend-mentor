@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Works.css'
+import React, { useState } from "react";
+import "./Works.css";
 
 interface CardData {
   id: number;
@@ -8,14 +8,33 @@ interface CardData {
 }
 
 const cardDetails: CardData[] = [
-  { id: 1, title: 'Card 1', description: 'Browse our collection of professionally designed projects. Pick one that suits the level you’re currently at.' },
-  { id: 2, title: 'Card 2', description: 'Browse our collection of professionally designed projects. Pick one that suits the level you’re currently at.' },
-  { id: 3, title: 'Card 3', description: 'Browse our collection of professionally designed projects. Pick one that suits the level you’re currently at.' },
-  { id: 4, title: 'Card 4', description: 'Browse our collection of professionally designed projects. Pick one that suits the level you’re currently at.' }
+  {
+    id: 1,
+    title: "Choose your challenge",
+    description:
+      "Browse our collection of professionally designed projects. Pick one that suits the level you’re currently at.",
+  },
+  {
+    id: 2,
+    title: "Code the design",
+    description:
+      "Each project comes with all files included. This means you can focus on coding the project using the design as a reference.",
+  },
+  {
+    id: 3,
+    title: "Submit your solution",
+    description:
+      "Get feedback from the community about your code and see how close you got to the design.",
+  },
+  {
+    id: 4,
+    title: "Give others feedback",
+    description:
+      "Reviewing other people’s code is a vital part of being a developer. Practice giving code reviews and help others improve.",
+  },
 ];
 
 const Works: React.FC = () => {
-  // Initialize with the ID of the card that should display the default image
   const [activeCard, setActiveCard] = useState<number>(1);
 
   const handleCardClick = (id: number) => {
@@ -38,23 +57,25 @@ const Works: React.FC = () => {
   };
 
   return (
-    <div className="how-it-works">
-      <div className="cards">
-        {cardDetails.map(card => (
-          <div
-            key={card.id}
-            className={`card ${activeCard === card.id ? 'active' : ''}`}
-            onClick={() => handleCardClick(card.id)}
-          >
-            <h3>{activeCard === card.id ? card.title : 'Choose your challenge'}</h3>
-            {activeCard === card.id && <p>{card.description}</p>}
+    <>
+      <div className="how-it-works-header">
+        <div className="how-it-works">
+          <div className="cards">
+            {cardDetails.map((card) => (
+              <div
+                key={card.id}
+                className={`card ${activeCard === card.id ? "active" : ""}`}
+                onClick={() => handleCardClick(card.id)}
+              >
+                <h3>{card.title}</h3>
+                {activeCard === card.id && <p>{card.description}</p>}
+              </div>
+            ))}
           </div>
-        ))}
+          <div className="tab-content">{renderImage()}</div>
+        </div>
       </div>
-      <div className="tab-content">
-        {renderImage()}
-      </div>
-    </div>
+    </>
   );
 };
 
