@@ -7,7 +7,7 @@ const Header:React.FC = () => {
     <>
     <div className="header">
         <div className="header-content">
-            <h1 className='text-blue-500'>Improve your coding skills by building realistic projects</h1>
+            <h1 className='text-blue-900'>Improve your coding skills by building realistic projects</h1>
             <p className='header-para'>Our professionally designed challenges help you gain hands-on experience writing HTML, CSS, and JavaScript.
                  We create the designs so you can focus on the code and see your skills skyrocket!</p>
                  <div className='log-div'>
