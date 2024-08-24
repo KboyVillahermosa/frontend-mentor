@@ -1,0 +1,25 @@
+
+
+.faq-title{
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+}
+
+.faq-title-content h1{
+    font-size: clamp(1.875rem, 1.0938rem + 2.5vw, 2.5rem);
+}
+
+.faq-header{
+    justify-content: center;
+    display: grid;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+.faq-content{
+    width: 100%;
+    max-width: 700px;
+}

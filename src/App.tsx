@@ -5,8 +5,12 @@ import { Component as Banner } from "./components/banner/Banner";
 import Works from "./components/works/Works";
 import Testimonials from "./components/testimonials/Testimonials";
 import Featured from "./featured/Featured";
-import Learn from './components/learn//Learn'
+import Learn from "./components/learn//Learn";
 import Community from "./components/community/Community";
+import Faq from "./components/faq/Faq";
+import Join from "./components/join/Join";
+import Hiring from "./components/hiring/Hiring";
+import { Component as Footer } from './components/footer/Footer';
 
 function App() {
   return (
@@ -20,11 +24,15 @@ function App() {
             element={
               <>
                 <Header />
-                < Testimonials />
-                < Featured />
+                <Testimonials />
+                <Featured />
                 <Works />
-                < Learn />
-                < Community />
+                <Learn />
+                <Community />
+                <Faq />
+                <Join />
+                <Hiring />
+                < Footer/>
               </>
             }
           />

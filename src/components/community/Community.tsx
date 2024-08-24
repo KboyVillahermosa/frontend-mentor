@@ -57,8 +57,7 @@ const Community: React.FC = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsToShow, setItemsToShow] = useState(3);
-
-  // Handle window resizing
+ // Handle window resizing
   React.useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 900) {
@@ -71,7 +70,6 @@ const Community: React.FC = () => {
 
     window.addEventListener("resize", handleResize);
 
-    // Call handler right away so state gets updated with initial window size
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
@@ -113,17 +111,17 @@ React.useEffect(() => {
   return (
     <div className="card-slider-headerz mx-auto w-full max-w-6xl p-4">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-bold">Community Testimonials</h2>
+        <h2 className="h2-community">A little ❤️️ from our community</h2>
         <div className="flex">
           <button
             onClick={handlePrev}
-            className="rounded-full bg-gray-200 p-2 hover:bg-gray-300"
+            className="arrow-left rounded-full bg-gray-200 p-5 hover:bg-blue-700 hover:text-white"
           >
             <FaArrowLeft />
           </button>
           <button
             onClick={handleNext}
-            className="ml-2 rounded-full bg-gray-200 p-2 hover:bg-gray-300"
+            className="ml-2 rounded-full bg-gray-200 p-5 hover:bg-blue-600 hover:text-white"
           >
             <FaArrowRight />
           </button>

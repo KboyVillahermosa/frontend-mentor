@@ -14,3 +14,7 @@
 .slider-card p{
     text-align: justify;
 }
+
+.h2-community{
+    font-size: clamp(1.875rem, 1.0938rem + 2.5vw, 2.5rem);
+}

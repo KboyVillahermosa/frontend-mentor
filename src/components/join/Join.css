@@ -1,0 +1,23 @@
+
+
+.join-header{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.join-header-content{
+    width: 100%;
+    max-width: 700px;
+}
+.join-header-content h1{
+    font-size: clamp(1.875rem, 1.0938rem + 2.5vw, 2.5rem);
+}
+.join-btn{
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
